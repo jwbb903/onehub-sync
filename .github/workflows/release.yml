@@ -22,10 +22,6 @@ jobs:
             runner: ubuntu-latest
             suffix: ""
           - goos: darwin
-            goarch: amd64
-            runner: macos-13
-            suffix: ""
-          - goos: darwin
             goarch: arm64
             runner: macos-latest
             suffix: ""
