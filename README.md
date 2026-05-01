@@ -1,12 +1,14 @@
-# onehub 模型更新工具
+# onehub-sync
 
-自动从各渠道 API 获取最新模型列表，批量更新 one-api/onehub 数据库。
+一键同步各 AI 渠道模型列表到 one-api / onehub 数据库。
+
+自动从 OpenAI、DeepSeek、Gemini、Groq、Anthropic 等渠道拉取最新可用模型，批量写入数据库，省去手动维护的麻烦。
 
 ## 功能
 
-- 自动识别渠道类型（OpenAI、DeepSeek、Gemini、Groq、Anthropic 等）
-- 并发获取模型列表，实时显示进度
-- 对比新旧模型列表，记录变更
+- 自动识别渠道类型并获取对应 API 的模型列表
+- 并发处理，实时终端进度展示
+- 新旧模型对比，记录变更详情
 - 支持清除所有渠道模型
 - 支持调试模式输出详细日志
 
@@ -53,3 +55,7 @@ python3 update_models.py
 
 - Go 1.24+
 - `github.com/mattn/go-sqlite3`
+
+## 许可证
+
+[MIT](LICENSE)

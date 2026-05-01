@@ -1,4 +1,4 @@
-module model-updater
+module onehub-sync
 
 go 1.24.4
 
