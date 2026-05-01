@@ -1,0 +1,16 @@
+# Binaries
+model-updater
+model-updater-linux-amd64
+*.exe
+
+# Databases
+*.db
+
+# Backup files
+*.bak
+
+# Go build cache
+/vendor/
+
+# Claude Code
+.claude/
